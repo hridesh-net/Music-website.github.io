@@ -1,0 +1,141 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 59px
+}
+
+/* navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*Navigation Bar: logo and image  */
+#logo{
+    margin: 6px 47px;
+    height: 51px;
+}
+
+#logo img{
+    width: 50%;
+    margin: 1px 3px;
+    padding: 0px;
+}
+
+/*Navbar list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: blanchedalmond;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 565px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/signbg2.jpg') no-repeat center center/cover;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(73, 72, 72);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    color: #444444;
+}
+
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 13px 11px;
+    padding: 5px 8px;
+    background: #f0f0f0;
+    border-radius: 17px;
+}
+
+#services .box img{
+    height: 184px;
+    display: block;
+    margin: auto;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 5px 21px;
+    border: 1px solid #6a6a6a;
+    background-color: #8b8b8b;
+    color: #ebeaea;
+    margin: 15px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
